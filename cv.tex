@@ -1,8 +1,13 @@
-\documentclass{article}
+% \documentclass{article}
+\documentclass{mycv}
+
+\usepackage[margin=0.25in]{geometry}
 
 \usepackage{paracol,xcolor,lipsum}
 \usepackage{graphicx}
 \usepackage{blindtext}
+\usepackage{fontawesome}
+
 \begin{document}
 
 \columnratio{0.3}
@@ -13,10 +18,11 @@
   \includegraphics[width=\linewidth]{img/avatar.png}
 \end{figure}
 
-\section{INFO}
-Pavel Reichl
+\section{Info}
 
-Brno
+\name{Pavel Reichl}
+
+\address{Brno}
 
 777 982 828
 
@@ -29,6 +35,12 @@ linkedin
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \switchcolumn
+
+\section{Education}
+\datedsubsection{University of Nowhere}{2004-2008}
+
+\section{Work}
+\datedsubsection{ABC Limited}{2008-Now}
 
 \section{PROFILE}
 
@@ -45,11 +57,19 @@ linkedin
 
 \end{paracol}
 
-aaaa
+\newpage
+
 \section{PROJECTS}
+\faicon{git}
+\faicon{twitter}
 
 \subsection{SSSD}
 
 \subsection{pamhbac}
 
+\faicon{git}
+\faGithub
+\faTwitter
+\faMapMarker
+\faMale
 \end{document}

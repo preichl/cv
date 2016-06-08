@@ -1,5 +1,5 @@
 createpdf:
-	pdflatex cv.tex
+	lualatex cv.tex
 
 test: createpdf
 	evince cv.pdf
