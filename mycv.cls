@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{my_cv}[6/6/2013 custom CV class]
+\ProvidesClass{mycv}[6/6/2013 custom CV class]
 \LoadClass{article}
 \RequirePackage{titlesec}
 \RequirePackage{fontawesome}
