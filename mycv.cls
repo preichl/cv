@@ -8,7 +8,7 @@
 \titleformat{\section}         % Customise the \section command
   {\Large\scshape\raggedright} % Make the \section headers large (\Large),
                                % small capitals (\scshape) and left aligned (\raggedright)
-  {}{10px}                      % Can be used to give a prefix to all sections, like 'Section ...'
+  {}{0px}                      % Can be used to give a prefix to all sections, like 'Section ...'
   {}                           % Can be used to insert code before the heading
   [\titlerule]                 % Inserts a horizontal line after the heading
 
@@ -24,21 +24,71 @@
   \subsection[#1]{#1 \hfill #2}%
 }
 
+\newcommand{\cvsec}[1]{
+  \leftline{
+    \hspace{3mm} \Large{#1}
+  }
+  \hspace{5mm}
+  \titlerule
+}
+
+\newcommand{\workexp}[1]{
+  \leftline{
+    \Large{\faMale} \cvsec{#1}
+  }
+  \hspace{3mm}\titlerule
+}
+
+\newcommand{\education}[1]{
+  \leftline{
+    \Large{\faMortarBoard} \cvsec{#1}
+  }
+}
+
 \newcommand{\name}[1]{
   \leftline{
   \begin{tabular}{ll}
-    \multirow{2}{*}{\Huge{\faMale}} & \Large{Name} \\
+    \multirow{2}{*}{\Large{\faMale}} & \Large{Name} \\
     &  #1 \\
   \end{tabular}
   }
 }
 
-\newcommand{\address}[1]{
+\newcommand{\address}[3]{
   \leftline{
   \begin{tabular}{ll}
-    \multirow{3}{*}{\Huge{\faMapMarker}} & \Large{Address} \\
-    &  Nezvalova 4 \\
-    &  Brno \\
+    \multirow{4}{*}{\Large{\faMapMarker}} & \Large{Address} \\
+    &  #1 \\
+    &  #2 \\
+    &  #3 \\
   \end{tabular}
   }
 }
+
+\newcommand{\phone}[1]{
+  \leftline{
+  \begin{tabular}{ll}
+    \multirow{1}{*}{\Large{\faMobile}} & \Large{Phone} \\
+    & #1 \\
+  \end{tabular}
+  }
+}
+
+\newcommand{\linkedin}[1]{
+  \leftline{
+  \begin{tabular}{ll}
+    \multirow{1}{*}{\Large{\faLinkedinSquare}} & \Large{Linkedin} \\
+    & #1 \\
+  \end{tabular}
+  }
+}
+
+\newcommand{\email}[1]{
+  \leftline{
+  \begin{tabular}{ll}
+    \multirow{1}{*}{\Large{\faEnvelopeSquare}} & \Large{Email} \\
+    & #1 \\
+  \end{tabular}
+  }
+}
+
