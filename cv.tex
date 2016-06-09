@@ -1,18 +1,25 @@
 % \documentclass{article}
 \documentclass{mycv}
 
-\usepackage[margin=0.25in]{geometry}
+\usepackage[margin=1.0in]{geometry}
 
 \usepackage{paracol,xcolor,lipsum}
 \usepackage{graphicx}
 \usepackage{blindtext}
 \usepackage{fontawesome}
 
+\usepackage{etoolbox}% http://ctan.org/pkg/etoolbox
+
 \begin{document}
 
-\columnratio{0.3}
-\begin{paracol}{2}
-\backgroundcolor{c[0]}[rgb]{0.5,0.5,0.5}
+\columnratio{0.3,0.05}
+\begin{paracol}{3}
+
+%% \backgroundcolor{c[0]}[rgb]{0.5,0.5,0.5}
+%% \backgroundcolor{c[1]}[rgb]{0.5,0.5,0.5}
+%% \backgroundcolor{c[2]}[rgb]{0.5,0.5,0.5}
+%% \backgroundcolor{g[0]}[rgb]{0.5,0.5,0.5}
+%% \backgroundcolor{g[1]}[rgb]{0.5,0.5,0.5}
 
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{img/avatar.png}
@@ -34,6 +41,7 @@ linkedin
 \lipsum[1]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\switchcolumn
 \switchcolumn
 
 \section{Education}
@@ -70,6 +78,5 @@ linkedin
 \faicon{git}
 \faGithub
 \faTwitter
-\faMapMarker
 \faMale
 \end{document}
