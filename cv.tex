@@ -1,59 +1,62 @@
 % \documentclass{article}
 \documentclass{mycv}
 
-\usepackage[margin=1.0in]{geometry}
+\usepackage[margin=2.0cm]{geometry}
 \usepackage{paracol,xcolor,lipsum}
 \usepackage{graphicx}
 \usepackage{fontawesome}
 \usepackage[english]{babel}
 \usepackage[T1]{fontenc}
-\usepackage[scale=.9]{tgheros} % or helvet
-\usepackage{scrextend}
+%% \usepackage[scale=.9]{tgheros} % or helvet
+\usepackage{helvet} % or helvet
+\usepackage{multirow}
+\usepackage[]{hyperref}
+\hypersetup{hidelinks=true}
 
 \renewcommand{\familydefault}{\sfdefault}
+%% \urlstyle{helver}
 
 \begin{document}
-
+\urlstyle{sf}
 %% \columnratio{0.3,0.05}
 %% \begin{paracol}{3}
 \columnratio{0.3}
 \begin{paracol}{2}
 
-%% \backgroundcolor{c[0]}[rgb]{0.25,0.25,0.25}
-%% \backgroundcolor{c[1]}[rgb]{0.5,0.5,0.5}
-%% \backgroundcolor{c[2]}[rgb]{0.5,0.5,0.5}
-%% \backgroundcolor{g[0]}[rgb]{0.5,0.5,0.5}
-%% \backgroundcolor{g[1]}[rgb]{0.5,0.5,0.5}
+%% \backgroundcolor{c[0]}[rgb]{0.75,0.75,0.75}
 
   \begin{figure}[h!]
     \centering
   %% \includegraphics[width=\linewidth]{img/avatar.png}
-  \includegraphics[width=2cm]{img/avatar.png}
-\end{figure}
+    \includegraphics[width=2cm]{img/avatar.png}
+  \end{figure}
 
-\section{Info}
+  \vspace{1cm}
 
-\leftline{
-  \begin{tabular}{cl}
-    \multirow{2}{*}{\Large{\faMale}} & \Large{Name} \\
-    &  Pavel Reichl \\
-    \multirow{0}{*}{} & \\
-    \multirow{3}{*}{\Large{\faMapMarker}} & \Large{Address} \\
-    &  Brno \\
-    &  Czech Republic \\
-    \multirow{0}{*}{} & \\
-    \multirow{1}{*}{\Large{\faMobile}} & \Large{Phone} \\
-    & +420 777 983 828 \\
-    \multirow{0}{*}{} & \\
-    \multirow{1}{*}{\Large{\faLinkedinSquare}} & \Large{Linkedin} \\
-    & cz.linkedin.com/in/pavelreichl \\
-    \multirow{0}{*}{} & \\
-    \multirow{1}{*}{\Large{\faEnvelopeSquare}} & \Large{Email} \\
-    & reichl.pavel\@gmail.com \\
-  \end{tabular}
-}
+  \leftline{
+    \begin{tabular}{cl}
+      \multirow{2}{*}{\Large{\faMale}} & \Large{Name} \\
+      &  Pavel Reichl \\
+      \multirow{0}{*}{} & \\
+      \multirow{3}{*}{\Large{\faMapMarker}} & \Large{Address} \\
+      &  Brno \\
+      &  Czech Republic \\
+      \multirow{0}{*}{} & \\
+      \multirow{1}{*}{\Large{\faEnvelopeSquare}} & \Large{Email} \\
+      %% & \href{mailto:me@example.com}{\nolinkurl{me@example.com}} \\
+      & \small{\url{reichl.pavel@gmail.com}} \\
+      \multirow{0}{*}{} & \\
+      \multirow{1}{*}{\Large{\faMobile}} & \Large{Phone} \\
+      & +420 777 983 828 \\
+      \multirow{0}{*}{} & \\
+      \multirow{1}{*}{\Large{\faLinkedinSquare}} & \Large{Linkedin} \\
+      &\url{cz.linkedin.com/in/pavelreichl} \\
+      \Large{\faLinkedinSquare} & \Large{Linkedin} \\
+      \multicolumn{2}{l}{\small{\url{cz.linkedin.com/in/pavelreichl}}} \\
+    \end{tabular}
+  }
 
-\vspace{1cm}
+  \vspace{1cm}
 \leftline{
   \Large{
     \faFile
@@ -64,15 +67,6 @@
 
 \vspace{1mm}
 I am a software engineer interested in system and security software and also more generally in open source software. I have a background of game develepoper which gave me experice with optimization and computer graphica. I am looking for new chalanges.
-
-\begin{tabular}{cl}
-  \multirow{1}{*}{\small{\faQuoteLeft}} & \parbox{4cm}{I am a software engineer interested in system and security software and also more generally in open source software. I have a background of game develepoper which gave me experice with optimization and computer graphica. I am looking for new chalanges.}  \\
-\end{tabular}
-
-\vfill
-\section{TIMELINE}
-
-\lipsum[1]
 
 \switchcolumn
 
@@ -139,45 +133,39 @@ I am a software engineer interested in system and security software and also mor
     One time contract on a single project.
 }
 
-\begin{tabular}{cl}
-  \multirow{2}{*}{} & \textsc{Oct 2013-–May 2016 | \textbf{Red Hat}, Brno} \\
-  & \textsc{Software engineer} \\
-  & \parbox{10cm}{
-    Member of tech team responsible for maintenance of corporate technology and development of new tools.
-  } \\
+%% \begin{tabular}{cl}
+%%   \multirow{2}{*}{} & \textsc{Oct 2013-–May 2016 | \textbf{Red Hat}, Brno} \\
+%%   & \textsc{Software engineer} \\
+%%   & \parbox{10cm}{
+%%     Member of tech team responsible for maintenance of corporate technology and development of new tools.
+%%   } \\
 
-  \multirow{0}{*}{} & \\
-  \multirow{2}{*}{} & \textsc{Sep 2011-–Jan 2013 | \textbf{Seznam.cz}, Brno} \\
-  & \textsc{Tech team programmer} \\
-  & \parbox{10cm}{
-    Member of tech team responsible for maintenance of corporate technology and development of new tools.
-  }\\
-  \\
-  \multirow{2}{*}{} & \textsc{Programmer} \\
-  & \parbox{10cm}{
-    Maintenance of high-traffic web applications. (novinky.cz, sport.cz, super.cz)
-  } \\
+%%   \multirow{0}{*}{} & \\
+%%   \multirow{2}{*}{} & \textsc{Sep 2011-–Jan 2013 | \textbf{Seznam.cz}, Brno} \\
+%%   & \textsc{Tech team programmer} \\
+%%   & \parbox{10cm}{
+%%     Member of tech team responsible for maintenance of corporate technology and development of new tools.
+%%   }\\
+%%   \\
+%%   \multirow{2}{*}{} & \textsc{Programmer} \\
+%%   & \parbox{10cm}{
+%%     Maintenance of high-traffic web applications. (novinky.cz, sport.cz, super.cz)
+%%   } \\
 
-  \multirow{0}{*}{} & \\
-  \multirow{2}{*}{} & \textsc{Jun 2008-–Nov 2010 | \textbf{Hammerware, s.r.o}, Brno} \\
-  & \textsc{Programmer} \\
-  & \parbox{10cm}{
-    Development of cross-platform games - programming, debugging, optimization and testing.
-  }\\
+%%   \multirow{0}{*}{} & \\
+%%   \multirow{2}{*}{} & \textsc{Jun 2008-–Nov 2010 | \textbf{Hammerware, s.r.o}, Brno} \\
+%%   & \textsc{Programmer} \\
+%%   & \parbox{10cm}{
+%%     Development of cross-platform games - programming, debugging, optimization and testing.
+%%   }\\
 
-  \multirow{0}{*}{} & \\
-  \multirow{2}{*}{} & \textsc{Jun 2007--Oct 2010 | \textbf{Handjoy}, Brno} \\
-  & \textsc{Programmer} \\
-  & \parbox{10cm}{
-    One time contract on a single project.
-  }\\
-\end{tabular}
-
-%% python, MySQL, SVN
-%% 2008–2010 Programmer, Hammerware, s.r.o., Brno.
-%% (30 months) Development of cross-platform games - programming, debugging, optimization and testing.
-%% C++, OGRE, XML, SVN
-%% 2007 Programmer, Handjoy, Brno.
+%%   \multirow{0}{*}{} & \\
+%%   \multirow{2}{*}{} & \textsc{Jun 2007--Oct 2010 | \textbf{Handjoy}, Brno} \\
+%%   & \textsc{Programmer} \\
+%%   & \parbox{10cm}{
+%%     One time contract on a single project.
+%%   }\\
+%% \end{tabular}
 
 \vspace{3mm}
 
@@ -191,20 +179,12 @@ I am a software engineer interested in system and security software and also mor
   }
 }
 
+\uni{2010--2013}{Masaryk University}{Brno}{Masters’s degree of Applied Informatics}{Procedural modelling of buildings}
+
+\uni{2005--2008}{Masaryk University}{Brno}{Bachelor’s degree of Applied Informatics}{Octree-based Ray Tracer}
+
 \vspace{5mm}
 
-\begin{tabular}{cl}
-  \multirow{2}{*}{\faQuoteLeft} & \texttt{2012-–2013} | \textsc{Seznam.cz}, Brno. \\
-  & Tech team programmer \\
-  & (12 months) Member of tech team responsible for maintenance of corporate technology and development of new tools. \\
-  \multirow{0}{*}{} & \\
-  \multirow{4}{*}{\Large{\faMapMarker}} & \textbf{Address} \\
-  &  Nezvalova 4 \\
-  &  Brno \\
-  &  Czech Republic \\
-  \multirow{0}{*}{} & \\
-\end{tabular}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
@@ -212,43 +192,43 @@ I am a software engineer interested in system and security software and also mor
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
 
 
-\vspace{2cm}
+%% \vspace{2cm}
 
-\workexp{Work experience}
-\education{Education}
-\section{Education}
-\datedsubsection{University of Nowhere}{2004-2008}
+%% \workexp{Work experience}
+%% \education{Education}
+%% \section{Education}
+%% \datedsubsection{University of Nowhere}{2004-2008}
 
-\section{Work}{XXX}
-\datedsubsection{ABC Limited}{2008-Now}
+%% \section{Work}{XXX}
+%% \datedsubsection{ABC Limited}{2008-Now}
 
-\section{PROFILE}
+%% \section{PROFILE}
 
-\lipsum[2]
+%% \lipsum[2]
 
-\section{WORK EXPERIENCE}
-\subsection{red hat}
-\subsection{seznam}
-\subsection{hammerware}
+%% \section{WORK EXPERIENCE}
+%% \subsection{red hat}
+%% \subsection{seznam}
+%% \subsection{hammerware}
 
-\section{EDUCATION}
-\subsection{BC}
-\subsection{MASTER}
+%% \section{EDUCATION}
+%% \subsection{BC}
+%% \subsection{MASTER}
 
 \end{paracol}
 
-\newpage
+%% \newpage
 
-\section{PROJECTS}
-\faicon{git}
-\faicon{twitter}
+%% \section{PROJECTS}
+%% \faicon{git}
+%% \faicon{twitter}
 
-\subsection{SSSD}
+%% \subsection{SSSD}
 
-\subsection{pamhbac}
+%% NN\subsection{pamhbac}
 
-\faicon{git}
-\faGithub
-\faTwitter
-\faMale
+%% \faicon{git}
+%% \faGithub
+%% \faTwitter
+%% \faMale
 \end{document}
