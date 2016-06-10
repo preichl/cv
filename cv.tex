@@ -10,38 +10,37 @@
 %% \usepackage[scale=.9]{tgheros} % or helvet
 \usepackage{helvet} % or helvet
 \usepackage{multirow}
-\usepackage[]{hyperref}
+\usepackage{hyperref}
+\usepackage{tkz-graph}
+
 \hypersetup{hidelinks=true}
 
 \renewcommand{\familydefault}{\sfdefault}
-%% \urlstyle{helver}
 
 \begin{document}
+\pagenumbering{gobble}
 \urlstyle{sf}
-%% \columnratio{0.3,0.05}
-%% \begin{paracol}{3}
 \columnratio{0.3}
 \begin{paracol}{2}
 
+  %% \color[rgb]{0.9,0.9,0.9}
   \begin{figure}[h!]
     \centering
     %% \includegraphics[width=\linewidth]{img/avatar.png}
     \includegraphics[width=2cm]{img/avatar.png}
   \end{figure}
 
-
-
-  \backgroundcolor{t}[rgb]{0.8,0.8,0.8} % dark red for top margin
-  \backgroundcolor{b}[rgb]{0.8,0.6,0} % dark orange for bottom margin
-  \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
-  \backgroundcolor{r}[rgb]{0,0.7,0} % dark green for right margin
-  \backgroundcolor{c[0]}[rgb]{1,0.8,1} % pink for colunmn-0
-  \backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1
-  \backgroundcolor{g}[rgb]{0.8,1,1} % light blue for the gap
-  \backgroundcolor{f}[rgb]{0.8,0,1} % purple for page-wise floats
-  %% \backgroundcolor{n}[rgb]{0.8,0.6,1} % light purple for page-wise footnotes
-  \backgroundcolor{p}[rgb]{0.8,1,0.6} % pale green for pre/post-environment
-  %% \backgroundcolor{s}[rgb]{0.8,0.8,0.8}
+  %% \backgroundcolor{t}[rgb]{0.8,0.8,0.8} % dark red for top margin
+  %% %% \backgroundcolor{b}[rgb]{0.8,0.6,0} % dark orange for bottom margin
+  %% \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+  %% \backgroundcolor{r}[rgb]{0,0.7,0} % dark green for right margin
+  %% \backgroundcolor{c[0]}[rgb]{0.2,0.2,0.2} % pink for colunmn-0
+  %% %% \backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1
+  %% %% \backgroundcolor{g}[rgb]{0.8,1,1} % light blue for the gap
+  %% \backgroundcolor{f}[rgb]{0.8,0,1} % purple for page-wise floats
+  %% %% \backgroundcolor{n}[rgb]{0.8,0.6,1} % light purple for page-wise footnotes
+  %% %% \backgroundcolor{p}[rgb]{0.8,1,0.6} % pale green for pre/post-environment
+  %% %% \backgroundcolor{s}[rgb]{0.8,0.8,0.8}
 
   \vspace{1cm}
 
@@ -66,7 +65,7 @@
     \end{tabular}
   }
 
-  \vspace{1cm}
+  \vspace{5mm}
 \leftline{
   \Large{
     \faFile
@@ -76,7 +75,10 @@
 }
 
 \vspace{1mm}
-I am a software engineer interested in system and security software and also more generally in open source software. I have a background of game develepoper which gave me experice with optimization and computer graphica. I am looking for new chalanges.
+{\small{
+    I am a software engineer interested in system and security software and also more generally in open source software. I have a background of game develepoper which gave me experice with optimization and computer graphica. I am looking for new chalanges.
+  }
+}
 
 \switchcolumn
 
@@ -98,21 +100,21 @@ I am a software engineer interested in system and security software and also mor
 
 %% Profile %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\leftline{
-  \Large{
-    \faFile
-    \hspace{10px}
-    \textsc{Profile}
-  }
-}
+%% \leftline{
+%%   \Large{
+%%     \faFile
+%%     \hspace{10px}
+%%     \textsc{Profile}
+%%   }
+%% }
 
-\vspace{1mm}
+%% \vspace{1mm}
 
-\begin{tabular}{cl}
-  \multirow{1}{*}{\small{\faQuoteLeft}} & \parbox{10cm}{I am a software engineer interested in system and security software and also more generally in open source software. I have a background of game develepoper which gave me experice with optimization and computer graphica. I am looking for new chalanges.}  \\
-\end{tabular}
+%% \begin{tabular}{cl}
+%%   \multirow{1}{*}{\small{\faQuoteLeft}} & \parbox{10cm}{I am a software engineer interested in system and security software and also more generally in open source software. I have a background of game develepoper which gave me experice with optimization and computer graphica. I am looking for new chalanges.}  \\
+%% \end{tabular}
 
-\vspace{3mm}
+%% \vspace{3mm}
 
 %% Work experience  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -163,4 +165,16 @@ I am a software engineer interested in system and security software and also mor
 
 \vspace{5mm}
 \end{paracol}
+
+\begin{tikzpicture}
+  \renewcommand*{\VertexLineWidth}{2pt}
+  \GraphInit[vstyle=Welsh]
+  \Vertices[unit=3]{circle}{A,B,C,D,E,F,G}
+  \SetVertexNoLabel
+  \AddVertexColor{red}{B,F} \AddVertexColor{blue}{E,A}
+  \AddVertexColor{green}{C,G}\AddVertexColor{yellow}{D}
+  \Vertex[Node]{D}}
+    \Edges(G,E,F,G,B,D,E,C,D,A,C,B,A)\Edges(B,E)
+\end{tikzpicture}
+
 \end{document}
