@@ -11,11 +11,8 @@
 \usepackage{helvet} % or helvet
 \usepackage{multirow}
 \usepackage{hyperref}
-\usepackage{tkz-graph}
 
 \hypersetup{hidelinks=true}
-
-\renewcommand{\familydefault}{\sfdefault}
 
 \begin{document}
 \pagenumbering{gobble}
@@ -29,18 +26,6 @@
     %% \includegraphics[width=\linewidth]{img/avatar.png}
     \includegraphics[width=2cm]{img/avatar.png}
   \end{figure}
-
-  %% \backgroundcolor{t}[rgb]{0.8,0.8,0.8} % dark red for top margin
-  %% %% \backgroundcolor{b}[rgb]{0.8,0.6,0} % dark orange for bottom margin
-  %% \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
-  %% \backgroundcolor{r}[rgb]{0,0.7,0} % dark green for right margin
-  %% \backgroundcolor{c[0]}[rgb]{0.2,0.2,0.2} % pink for colunmn-0
-  %% %% \backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1
-  %% %% \backgroundcolor{g}[rgb]{0.8,1,1} % light blue for the gap
-  %% \backgroundcolor{f}[rgb]{0.8,0,1} % purple for page-wise floats
-  %% %% \backgroundcolor{n}[rgb]{0.8,0.6,1} % light purple for page-wise footnotes
-  %% %% \backgroundcolor{p}[rgb]{0.8,1,0.6} % pale green for pre/post-environment
-  %% %% \backgroundcolor{s}[rgb]{0.8,0.8,0.8}
 
   \vspace{1cm}
 
@@ -65,21 +50,18 @@
     \end{tabular}
   }
 
-  \vspace{5mm}
-\leftline{
-  \Large{
-    \faFile
-    \hspace{10px}
-    \textsc{Profile}
-  }
-}
+\vspace{5mm}
 
-\vspace{1mm}
+\topic{Profile}{\faFile}
+
 {\small{
     I am a software engineer interested in system and security software and also more generally in open source software. I have a background of game develepoper which gave me experice with optimization and computer graphica. I am looking for new chalanges.
   }
 }
 
+\vspace{5mm}
+
+\topic{Languages}{\faFlag}
 \switchcolumn
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -118,46 +100,31 @@
 
 %% Work experience  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\leftline{
-  \Large{
-    \faCog
-    \hspace{10px}
-    \textsc{Work Experience}
-  }
-}
-
-\vspace{1mm}
+\topic{Work Experience}{\faCog}
 
 \jobls{Oct 2013-–May 2016}{Red Hat}{Brno}{Software engineer}{
   Member of tech team responsible for maintenance of corporate technology and development of new tools
-  }
+  }{C|Git|Fedora|LDAP|Kerberos}
 
 \mjobls{Sep 2011-–Jan 2013}{Seznam.cz}{Brno}{Tech team programmer}{
     Member of tech team responsible for maintenance of corporate technology and development of new tools
-}{Programmer}{
-  Maintenance of high-traffic web applications. (novinky.cz, sport.cz, super.cz)}
+}{C++|Git}
+       {Programmer}{
+  Maintenance of high-traffic web applications. (novinky.cz, sport.cz, super.cz)}{Python|SVN}
 
 \jobls{Jun 2008-–Nov 2010}{Hammerware, s.r.o}{Brno}{Programmer}{
     Development of cross-platform games - programming, debugging, optimization and testing.
-}
+}{C++|SVN|Ogre}
 
 \jobls{Jun 2007--Oct 2010}{Handjoy}{Brno}{Programmer}{
     One time contract on a single project.
-}
+}{C++|OpenGL}
 
 \vspace{3mm}
 
 %% Education %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\leftline{
-  \Large{
-    \faMortarBoard
-    \hspace{8px}
-    \textsc{Education}
-  }
-}
-
-\vspace{1mm}
+\topic{Education}{\faMortarBoard}
 
 \uni{2010--2013}{Masaryk University}{Brno}{Masters’s degree of Applied Informatics}{Procedural modelling of buildings}
 
@@ -165,16 +132,5 @@
 
 \vspace{5mm}
 \end{paracol}
-
-\begin{tikzpicture}
-  \renewcommand*{\VertexLineWidth}{2pt}
-  \GraphInit[vstyle=Welsh]
-  \Vertices[unit=3]{circle}{A,B,C,D,E,F,G}
-  \SetVertexNoLabel
-  \AddVertexColor{red}{B,F} \AddVertexColor{blue}{E,A}
-  \AddVertexColor{green}{C,G}\AddVertexColor{yellow}{D}
-  \Vertex[Node]{D}}
-    \Edges(G,E,F,G,B,D,E,C,D,A,C,B,A)\Edges(B,E)
-\end{tikzpicture}
 
 \end{document}

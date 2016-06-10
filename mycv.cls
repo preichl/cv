@@ -4,36 +4,28 @@
 \RequirePackage{fontawesome}
 \RequirePackage{scrextend}
 
-\newcommand{\jobls}[5]{
+\newcommand{\jobls}[6]{
   \begin{addmargin}[15mm]{0em}
     \textsc{#1 | \textbf{#2}, #3} \\
-    %% \begin{addmargin}[5mm]{0em}
-      \textsc{#4} \\
-      %% \begin{addmargin}[5mm]{0em}
-        #5
-      \end{addmargin}
-  %%   \end{addmargin}
-  %% \end{addmargin}
-  \vspace{3mm}
-}
-
-\newcommand{\mjobls}[7]{
-  \begin{addmargin}[15mm]{0em}
-    \textsc{#1 | \textbf{#2}, #3} \\
-    %% \begin{addmargin}[5mm]{0em}
-      \textsc{#4} \\
-      %% \begin{addmargin}[5mm]{0em}
-        #5 \\
-      %% \end{addmargin}
-      \textsc{#6} \\
-      %% \begin{addmargin}[5mm]{0em}
-        #7
-    %%   \end{addmargin}
-    %% \end{addmargin}
+    \textsc{#4} \\
+    #5 \\
+    \faWrench\hspace{2mm}\texttt{#6}
   \end{addmargin}
   \vspace{3mm}
 }
 
+\newcommand{\mjobls}[9]{
+  \begin{addmargin}[15mm]{0em}
+    \textsc{#1 | \textbf{#2}, #3} \\
+    \textsc{#4} \\
+    #5 \\
+    \faWrench\hspace{2mm}\texttt{#6} \\
+    \textsc{#7}  \\
+    #8 \\
+    \faWrench\hspace{2mm}\texttt{#9}
+  \end{addmargin}
+  \vspace{3mm}
+}
 
 \newcommand{\uni}[6]{
   \begin{addmargin}[15mm]{0em}
@@ -46,4 +38,13 @@
     %% \end{addmargin}
   \end{addmargin}
   \vspace{3mm}
+}
+
+\newcommand{\topic}[2]{
+  \leftline{
+    \Large{
+      #2\hspace{10px}\textsc{#1}
+    }
+  }
+  \vspace{1mm}
 }
