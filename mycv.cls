@@ -5,30 +5,30 @@
 \RequirePackage{scrextend}
 
 \newcommand{\jobls}[6]{
-  \begin{addmargin}[15mm]{0em}
+  \begin{addmargin}[13mm]{0em}
     \textsc{#1 | \textbf{#2}, #3} \\
     \textsc{#4} \\
     #5 \\
-    \faWrench\hspace{2mm}\texttt{#6}
+    \faWrench\hspace{1mm}\texttt{#6}
   \end{addmargin}
   \vspace{3mm}
 }
 
 \newcommand{\mjobls}[9]{
-  \begin{addmargin}[15mm]{0em}
+  \begin{addmargin}[13mm]{0em}
     \textsc{#1 | \textbf{#2}, #3} \\
     \textsc{#4} \\
     #5 \\
-    \faWrench\hspace{2mm}\texttt{#6} \\
+    \faWrench\hspace{1mm}\texttt{#6} \\
     \textsc{#7}  \\
     #8 \\
-    \faWrench\hspace{2mm}\texttt{#9}
+    \faWrench\hspace{1mm}\texttt{#9}
   \end{addmargin}
   \vspace{3mm}
 }
 
 \newcommand{\uni}[6]{
-  \begin{addmargin}[15mm]{0em}
+  \begin{addmargin}[14mm]{0em}
     \textsc{#1 | \textbf{#2}, #3} \\
     %% \begin{addmargin}[5mm]{0em}
       \textsc{#4} \\
@@ -61,7 +61,7 @@
 }
 
 \newcommand{\project}[4]{
-  \begin{addmargin}[15mm]{0em}
+  \begin{addmargin}[13mm]{0em}
     \large{\textsc{#1}} | \normalsize{\textbf{#2}} | \normalsize{#4} \\
     \normalsize{
       #3

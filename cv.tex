@@ -1,7 +1,7 @@
 % \documentclass{article}
 \documentclass{mycv}
 
-\usepackage[margin=2.0cm]{geometry}
+\usepackage[margin=2.0cm,right=3cm]{geometry}
 \usepackage{paracol,xcolor,lipsum}
 \usepackage{graphicx}
 \usepackage{fontawesome}
@@ -16,8 +16,10 @@
 \begin{document}
 \pagenumbering{gobble}
 \urlstyle{sf}
-\columnratio{0.3,0.02}
+\columnratio{0.3,0.03}
 \begin{paracol}{3}
+
+  %% \backgroundcolor{c[2]}[rgb]{0.0,0,0}
 
   \begin{figure}[h!]
     \centering
@@ -38,29 +40,29 @@
       &  Brno \\
       &  Czech Republic \\
       \multirow{0}{*}{} & \\
-      \multirow{1}{*}{\large{\faEnvelopeSquare}} & \textsc{\large{Email}} \\
+      \multirow{1}{*}{\large{\faEnvelopeO}} & \textsc{\large{Email}} \\
       & \small{\url{reichl.pavel@gmail.com}} \\
       \multirow{0}{*}{} & \\
       \multirow{1}{*}{\large{\faMobile}} & \textsc{\large{Phone}} \\
       & +420 777 983 828 \\
       \multirow{0}{*}{} & \\
-      \large{\faLinkedinSquare} & \textsc{\large{Linkedin}} \\
+      \large{\faLinkedin} & \textsc{\large{Linkedin}} \\
       \multicolumn{2}{l}{\small{\url{cz.linkedin.com/in/pavelreichl}}} \\
     \end{tabular}
   }
 
 \vspace{10mm}
 
-\topic{Profile}{\faFile}
+\topic{Profile}{\faFileO}
 
 {\small{
-    I am a software engineer interested in system and security software and also more generally in open source. I have a background of game developer which gave me experience with optimization and computer graphics. I am looking for new challenges.
+    I am a software engineer interested in system and security software and also generally in Linux programming, and open source. I have a background of a game developer which gave me experience with optimization and computer graphics. I am looking for new challenges.
   }
 }
 
 \vspace{10mm}
 
-\topic{Languages}{\faFlag}
+\topic{Languages}{\faFlagO}
 \vspace{2mm}
 \leftline{
   \begin{tabular}{rc}
@@ -97,12 +99,12 @@
 \topic{Work Experience}{\faCogs}
 
 \jobls{Oct 2013-–May 2016}{\redhat}{Brno}{Software engineer}{
-Designing and developing new features (primarily C) with ephesis on product security and efficiency, bug fixing, testing, helping users and support with troubleshooting, participating in planning and documentation processes.
+Designing and developing new features (primarily C) with emphesis on product security and efficiency, bug fixing, testing, helping users and support engineers with troubleshooting, participating in planning and documentation processes.
 }{
   C|Git|Fedora|LDAP|Kerberos|PAM|Autotools}
 
 \mjobls{Sep 2011-–Jan 2013}{Seznam.cz}{Brno}{Tech team programmer}{
-    Member of tech team responsible for maintenance of corporate technology and development of new tools
+    Member of a tech team responsible for maintenance of corporate technology and development of new tools
 }{
   C++|Python|Git}{
   Programmer}{
@@ -110,7 +112,7 @@ Designing and developing new features (primarily C) with ephesis on product secu
   Python|SVN|Debian}
 
 \jobls{Jun 2008-–Nov 2010}{\hammerware}{Brno}{Game Developer}{
-    Development of cross-platform games - programming, debugging, optimization and testing.
+    Development of cross-platform games -- programming, debugging, optimization and testing.
 }{C++|SVN|Ogre}
 
 \jobls{Jun 2007--Oct 2010}{Handjoy}{Brno}{Game Developer}{
@@ -123,13 +125,13 @@ Designing and developing new features (primarily C) with ephesis on product secu
 
 \topic{Education}{\faMortarBoard}
 
-\uni{2010--2013}{Masaryk University}{Brno}{Masters’s degree of Applied Informatics}{Procedural modelling of buildings}
+\uni{2010--2013}{Masaryk University}{Brno}{Master's degree of Applied Informatics}{Procedural modelling of buildings}
 
-\uni{2005--2008}{Masaryk University}{Brno}{Bachelor’s degree of Applied Informatics}{Octree-based Ray Tracer}
+\uni{2005--2008}{Masaryk University}{Brno}{Bachelor's degree of Applied Informatics}{Octree-based Ray Tracer}
 
 \topicend
 
-\topic{Projects}{\faFolder}
+\topic{Projects}{\faFolderO}
 \project{SSSD}{\redhat}{
   SSSD is a system daemon. Its primary function is to provide access to identity and authentication remote resource.}{\faLinux\ \faLock}
 \project{pam\_hbac}{\redhat}{
