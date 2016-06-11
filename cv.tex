@@ -1,7 +1,7 @@
 % \documentclass{article}
 \documentclass{mycv}
 
-\usepackage[margin=2.2cm]{geometry}
+\usepackage[margin=2.0cm]{geometry}
 \usepackage{paracol,xcolor,lipsum}
 \usepackage{graphicx}
 \usepackage{fontawesome}
@@ -22,27 +22,29 @@
   \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\linewidth]{img/avatar.png}
-%%    \includegraphics[width=2cm]{img/avatar.png}
+    %%    \includegraphics[width=2cm]{img/avatar.png}
   \end{figure}
 
   \vspace{1cm}
+  %% \topic{Info}{\faInfo}
+  %% \vspace{2mm}
 
   \leftline{
     \begin{tabular}{cl}
-      \multirow{2}{*}{\Large{\faMale}} & \Large{Name} \\
+      \multirow{2}{*}{\large{\faMale}} & \textsc{\large{Name}} \\
       &  Pavel Reichl \\
       \multirow{0}{*}{} & \\
-      \multirow{3}{*}{\Large{\faMapMarker}} & \Large{Address} \\
+      \multirow{3}{*}{\large{\faMapMarker}} & \textsc{\large{Address}} \\
       &  Brno \\
       &  Czech Republic \\
       \multirow{0}{*}{} & \\
-      \multirow{1}{*}{\Large{\faEnvelopeSquare}} & \Large{Email} \\
+      \multirow{1}{*}{\large{\faEnvelopeSquare}} & \textsc{\large{Email}} \\
       & \small{\url{reichl.pavel@gmail.com}} \\
       \multirow{0}{*}{} & \\
-      \multirow{1}{*}{\Large{\faMobile}} & \Large{Phone} \\
+      \multirow{1}{*}{\large{\faMobile}} & \textsc{\large{Phone}} \\
       & +420 777 983 828 \\
       \multirow{0}{*}{} & \\
-      \Large{\faLinkedinSquare} & \Large{Linkedin} \\
+      \large{\faLinkedinSquare} & \textsc{\large{Linkedin}} \\
       \multicolumn{2}{l}{\small{\url{cz.linkedin.com/in/pavelreichl}}} \\
     \end{tabular}
   }
@@ -62,9 +64,9 @@
 \vspace{2mm}
 \leftline{
   \begin{tabular}{rc}
-    \textsc{\large{English}} & \multirow{2}{*}{\large{\faStar \faStar \faStarHalfO}} \\ Working Proficiency \\
-    \multirow{0}{*}{} & \\
     \textsc{\large{Czech}} & \multirow{2}{*}{\large{\faStar \faStar \faStar}} \\ Native \\
+    \multirow{0}{*}{} & \\
+    \textsc{\large{English}} & \multirow{2}{*}{\large{\faStar \faStar \faStarHalfO}} \\ Working Proficiency \\
     \multirow{0}{*}{} & \\
     \textsc{\large{German}} & \multirow{2}{*}{\large{\faStarHalfO \faStarO \faStarO}} \\ Elementary Proficiency
   \end{tabular}
@@ -88,7 +90,7 @@
   \resizebox{0.55\linewidth}{!}{\textsc{Software engineer}}
 }
 
-\vspace{15mm}
+\vspace{9mm}
 
 %% Work experience  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -107,11 +109,11 @@ Designing and developing new features (primarily C) with ephesis on product secu
   Maintenance of high-traffic web applications. (novinky.cz, sport.cz, super.cz)}{
   Python|SVN|Debian}
 
-\jobls{Jun 2008-–Nov 2010}{\hammerware}{Brno}{Programmer}{
+\jobls{Jun 2008-–Nov 2010}{\hammerware}{Brno}{Game Developer}{
     Development of cross-platform games - programming, debugging, optimization and testing.
 }{C++|SVN|Ogre}
 
-\jobls{Jun 2007--Oct 2010}{Handjoy}{Brno}{Programmer}{
+\jobls{Jun 2007--Oct 2010}{Handjoy}{Brno}{Game Developer}{
     One time contract on a single project.
 }{C++|OpenGL|SDL}
 
@@ -129,12 +131,12 @@ Designing and developing new features (primarily C) with ephesis on product secu
 
 \topic{Projects}{\faFolder}
 \project{SSSD}{\redhat}{
-  SSSD is a system daemon. Its primary function is to provide access to identity and authentication remote resource.}{\faLock}
+  SSSD is a system daemon. Its primary function is to provide access to identity and authentication remote resource.}{\faLinux\ \faLock}
 \project{pam\_hbac}{\redhat}{
-  A PAM account module that evaluates HBAC rules stored on an IPA server.}{\faLock}
+  A PAM account module that evaluates HBAC rules stored on an IPA server.}{\faLinux\ \faLock}
 \project{Family Farm}{\hammerware}{
   Innovative sim/tycoon game in the setting of 19th century farmstead for PC, Mac and
-  Linux.}{\faGamepad}
+  Linux.}{\faWindows\ \faGamepad}
 
 \end{paracol}
 

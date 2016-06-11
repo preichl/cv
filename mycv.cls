@@ -53,21 +53,21 @@
   \begin{addmargin}[2mm]{0em}
     \textsc{#1 | \textbf{#2}}
   \end{addmargin}
-  \vspace{3mm}
+  \vspace{2mm}
 }
 
 \newcommand{\topicend}{
-    \vspace{3mm}
+    \vspace{1mm}
 }
 
 \newcommand{\project}[4]{
   \begin{addmargin}[15mm]{0em}
-    \large{\textsc{#1}} | \textbf{#2} | #4 \\
+    \large{\textsc{#1}} | \normalsize{\textbf{#2}} | \normalsize{#4} \\
     \normalsize{
       #3
       }
   \end{addmargin}
-  \vspace{3mm}
+  \vspace{2mm}
 }
 
 \newcommand{\hammerware}{Hammerware, s.r.o.}
