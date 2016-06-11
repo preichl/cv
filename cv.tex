@@ -50,7 +50,7 @@
     \end{tabular}
   }
 
-\vspace{5mm}
+\topicend
 
 \topic{Profile}{\faFile}
 
@@ -59,9 +59,34 @@
   }
 }
 
-\vspace{5mm}
+\topicend
 
 \topic{Languages}{\faFlag}
+\lang{English}{Working proficiency}
+\lang{Czech}{Native}
+\lang{German}{Elementary proficiency}
+\leftline{
+  \begin{tabular}{cl}
+    \multirow{2}{*}{\Large{\faStar \faStar \faStarHalfO}} & \textsc{English} \\
+    &  Working Proficiency \\
+    \multirow{0}{*}{} & \\
+    \multirow{2}{*}{\faStar \faStar \faStar} & \Large{Czech} \\
+    &  Native \\
+    \multirow{0}{*}{} & \\
+    \multirow{2}{*}{\small{\faStarHalfO \faStarO \faStarO}} & \Large{German} \\
+    & Elementary Proficiency
+  \end{tabular}
+}
+\leftline{
+  \begin{tabular}{rc}
+    \textsc{English} & \multirow{2}{*}{\Large{\faStar \faStar \faStarHalfO}} \\ Working Proficiency \\
+    \multirow{0}{*}{} & \\
+    \textsc{\Large{Czech}} & \multirow{2}{*}{\faStar \faStar \faStar} \\ Native \\
+    \multirow{0}{*}{} & \\
+    \Large{German} & \multirow{2}{*}{\small{\faStarHalfO \faStarO \faStarO}} \\ Elementary Proficiency
+  \end{tabular}
+}
+
 \switchcolumn
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -100,27 +125,30 @@
 
 %% Work experience  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\topic{Work Experience}{\faCog}
+\topic{Work Experience}{\faCogs}
 
-\jobls{Oct 2013-–May 2016}{Red Hat}{Brno}{Software engineer}{
+\jobls{Oct 2013-–May 2016}{\redhat}{Brno}{Software engineer}{
   Member of tech team responsible for maintenance of corporate technology and development of new tools
-  }{C|Git|Fedora|LDAP|Kerberos}
+}{
+  C|Git|Fedora|LDAP|Kerberos|PAM|Autotools}
 
 \mjobls{Sep 2011-–Jan 2013}{Seznam.cz}{Brno}{Tech team programmer}{
     Member of tech team responsible for maintenance of corporate technology and development of new tools
-}{C++|Git}
-       {Programmer}{
-  Maintenance of high-traffic web applications. (novinky.cz, sport.cz, super.cz)}{Python|SVN}
+}{
+  C++|Python|Git}{
+  Programmer}{
+  Maintenance of high-traffic web applications. (novinky.cz, sport.cz, super.cz)}{
+  Python|SVN|Debian}
 
-\jobls{Jun 2008-–Nov 2010}{Hammerware, s.r.o}{Brno}{Programmer}{
+\jobls{Jun 2008-–Nov 2010}{\hammerware}{Brno}{Programmer}{
     Development of cross-platform games - programming, debugging, optimization and testing.
 }{C++|SVN|Ogre}
 
 \jobls{Jun 2007--Oct 2010}{Handjoy}{Brno}{Programmer}{
     One time contract on a single project.
-}{C++|OpenGL}
+}{C++|OpenGL|SDL}
 
-\vspace{3mm}
+\topicend
 
 %% Education %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -130,7 +158,17 @@
 
 \uni{2005--2008}{Masaryk University}{Brno}{Bachelor’s degree of Applied Informatics}{Octree-based Ray Tracer}
 
-\vspace{5mm}
+\topicend
+
+\topic{Projects}{\faFolder}
+\project{SSSD}{\redhat}{
+  SSSD is a system daemon. Its primary function is to provide access to identity and authentication remote resource.}{\faLock}
+\project{pam\_hbac}{\redhat}{
+  A PAM account module that evaluates HBAC rules stored on an IPA server.}{\faLock}
+\project{Family Farm}{\hammerware}{
+  Innovative sim/tycoon game in the setting of 19th century farmstead for PC, Mac and
+  Linux.}{\faGamepad}
+
 \end{paracol}
 
 \end{document}
