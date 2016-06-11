@@ -62,9 +62,9 @@
 
 \newcommand{\project}[4]{
   \begin{addmargin}[15mm]{0em}
-    #4 \hspace{1mm} \large{\textsc{#1}} | \textbf{#2} | #4 \hfill #4\\
+    \large{\textsc{#1}} | \textbf{#2} | #4 \\
     \normalsize{
-      \emph{#3}
+      #3
       }
   \end{addmargin}
   \vspace{3mm}

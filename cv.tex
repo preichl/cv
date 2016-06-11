@@ -1,7 +1,7 @@
 % \documentclass{article}
 \documentclass{mycv}
 
-\usepackage[margin=2.0cm]{geometry}
+\usepackage[margin=2.2cm]{geometry}
 \usepackage{paracol,xcolor,lipsum}
 \usepackage{graphicx}
 \usepackage{fontawesome}
@@ -17,14 +17,13 @@
 \begin{document}
 \pagenumbering{gobble}
 \urlstyle{sf}
-\columnratio{0.3}
-\begin{paracol}{2}
+\columnratio{0.3,0.02}
+\begin{paracol}{3}
 
-  %% \color[rgb]{0.9,0.9,0.9}
   \begin{figure}[h!]
     \centering
-    %% \includegraphics[width=\linewidth]{img/avatar.png}
-    \includegraphics[width=2cm]{img/avatar.png}
+    \includegraphics[width=0.8\linewidth]{img/avatar.png}
+%%    \includegraphics[width=2cm]{img/avatar.png}
   \end{figure}
 
   \vspace{1cm}
@@ -50,27 +49,31 @@
     \end{tabular}
   }
 
-\topicend
+\vspace{10mm}
 
 \topic{Profile}{\faFile}
 
 {\small{
-    I am a software engineer interested in system and security software and also more generally in open source software. I have a background of game develepoper which gave me experice with optimization and computer graphica. I am looking for new chalanges.
+    I am a software engineer interested in system and security software and also more generally in open source. I have a background of game developer which gave me experiece with optimization and computer graphica. I am looking for new chalanges.
   }
 }
 
-\topicend
+\vspace{10mm}
 
+\topic{Languages}{\faFlag}
+\vspace{2mm}
 \leftline{
   \begin{tabular}{rc}
-    \textsc{\Large{English}} & \multirow{2}{*}{\Large{\faStar \faStar \faStarHalfO}} \\ Working Proficiency \\
+    \textsc{\large{English}} & \multirow{2}{*}{\large{\faStar \faStar \faStarHalfO}} \\ Working Proficiency \\
     \multirow{0}{*}{} & \\
-    \textsc{\Large{Czech}} & \multirow{2}{*}{\faStar \faStar \faStar} \\ Native \\
+    \textsc{\large{Czech}} & \multirow{2}{*}{\large{\faStar \faStar \faStar}} \\ Native \\
     \multirow{0}{*}{} & \\
-    \textsc{Large{German}} & \multirow{2}{*}{\small{\faStarHalfO \faStarO \faStarO}} \\ Elementary Proficiency
+    \textsc{\large{German}} & \multirow{2}{*}{\large{\faStarHalfO \faStarO \faStarO}} \\ Elementary Proficiency
   \end{tabular}
 }
 
+
+\switchcolumn
 \switchcolumn
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -89,30 +92,12 @@
 
 \vspace{15mm}
 
-%% Profile %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%% \leftline{
-%%   \Large{
-%%     \faFile
-%%     \hspace{10px}
-%%     \textsc{Profile}
-%%   }
-%% }
-
-%% \vspace{1mm}
-
-%% \begin{tabular}{cl}
-%%   \multirow{1}{*}{\small{\faQuoteLeft}} & \parbox{10cm}{I am a software engineer interested in system and security software and also more generally in open source software. I have a background of game develepoper which gave me experice with optimization and computer graphica. I am looking for new chalanges.}  \\
-%% \end{tabular}
-
-%% \vspace{3mm}
-
 %% Work experience  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \topic{Work Experience}{\faCogs}
 
 \jobls{Oct 2013-–May 2016}{\redhat}{Brno}{Software engineer}{
-  Member of tech team responsible for maintenance of corporate technology and development of new tools
+Designing and developing new features (primarily C) with ephesis on product security and efficiency, bug fixing, testing, helping users and support with troubleshooting, participating in planning and documentation processes.
 }{
   C|Git|Fedora|LDAP|Kerberos|PAM|Autotools}
 
