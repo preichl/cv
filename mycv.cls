@@ -4,12 +4,12 @@
 \RequirePackage{fontawesome}
 \RequirePackage{scrextend}
 
-\newcommand{\jobls}[6]{
+\newcommand{\jobls}[5]{
   \begin{addmargin}[13mm]{0em}
     \textsc{#1 | \textbf{#2}, #3} \\
     \textsc{#4} \\
     #5 \\
-    \faWrench\hspace{1mm}\texttt{#6}
+    %% \faWrench\hspace{1mm}\texttt{#6}
   \end{addmargin}
   \vspace{3mm}
 }
@@ -27,14 +27,11 @@
   \vspace{3mm}
 }
 
-\newcommand{\uni}[6]{
+\newcommand{\uni}[5]{
   \begin{addmargin}[14mm]{0em}
     \textsc{#1 | \textbf{#2}, #3} \\
     %% \begin{addmargin}[5mm]{0em}
       \textsc{#4} \\
-      %% \begin{addmargin}[5mm]{0em}
-        Thesis: \emph{#5}
-      %% \end{addmargin}
     %% \end{addmargin}
   \end{addmargin}
   \vspace{3mm}
