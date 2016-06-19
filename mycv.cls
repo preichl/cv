@@ -57,9 +57,9 @@
     \vspace{1mm}
 }
 
-\newcommand{\project}[4]{
+\newcommand{\project}[3]{
   \begin{addmargin}[13mm]{0em}
-    \large{\textsc{#1}} | \normalsize{\textbf{#2}} | \normalsize{#4} \\
+    \large{\textsc{#1}} | \normalsize{\textbf{#2}} \\
     \normalsize{
       #3
       }
