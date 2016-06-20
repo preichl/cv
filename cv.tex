@@ -1,7 +1,7 @@
 % \documentclass{article}
 \documentclass{mycv}
 
-\usepackage[margin=2.0cm,right=3cm]{geometry}
+\usepackage[margin=2.0cm,right=3.1cm]{geometry}
 \usepackage{paracol,xcolor,lipsum}
 \usepackage{graphicx}
 \usepackage{fontawesome}
@@ -22,14 +22,15 @@
 \begin{document}
 \pagenumbering{gobble}
 \urlstyle{sf}
-\columnratio{0.3,0.03}
+\columnratio{0.32,0.01}
 \begin{paracol}{3}
 
   %% \backgroundcolor{c[2]}[rgb]{0.0,0,0}
 
   \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.8\linewidth]{img/prof3_lq.jpg}
+    \includegraphics[width=0.9\linewidth]{img/anna3.jpg}
+    %% \includegraphics[width=0.8\linewidth]{img/anna2.jpg}
     %% \includegraphics[width=0.5\linewidth]{img/prof1.jpg}
     %%    \includegraphics[width=2cm]{img/avatar.png}
   \end{figure}
@@ -62,25 +63,10 @@
 
 \topic{Profile}{\faFileO}
 
-{\small{
-    .
-  }
+{\small{I am currently an English teacher and although I love the job I am looking for new challenges and opportunities to meet new people and learn new things. Thanks to my various working experience I learned that I am good at working with people, assertive and stress resistant, and I have a proven record of educating myself quickly and successfully.}
 }
 
 \vspace{10mm}
-
-\topic{Languages}{\faFlagO}
-\vspace{2mm}
-\leftline{
-  \begin{tabular}{rc}
-    \textsc{\large{Czech}} & \multirow{2}{*}{\large{\faStar \faStar \faStar}} \\ Native \\
-    \multirow{0}{*}{} & \\
-    \textsc{\large{English}} & \multirow{2}{*}{\large{\faStar \faStar \faStar}} \\ Full Professional Proficiency \\
-    \multirow{0}{*}{} & \\
-    \textsc{\large{German}} & \multirow{2}{*}{\large{\faStar \faStarO \faStarO}} \\ Limited Working Proficiency
-  \end{tabular}
-}
-
 
 \switchcolumn
 \switchcolumn
@@ -111,7 +97,7 @@ Teaching Children, Individuals and Groups, from Beginners to Intermediate
 \jobls{Feb 2014-–Present}{Freelance}{Brno}{English Teacher and Translator}{
   Teaching Adults, Individuals and Groups, from Beginners to Advanced, General English, Business English, FCE/CAE Courses, Translating, Proofreading
 }
-\jobls{Feb 2014-–Present}{Lingua Centrum jazykova skola}{Brno}{English Teacher}{
+\jobls{Feb 2014-–Present}{Lingua Centrum}{Brno}{English Teacher}{
 Teaching Adults, Individuals and Groups, from Beginners to Advanced, Business English, General English
 }
 \jobls{Jul 2015-–Feb 2016}{Red Hat}{Brno}{Associate Technical Support Engineer Junior}{
@@ -140,16 +126,35 @@ Internship, Customer Care, Technical Support on the Phone, Working with Customer
 %% \topicend
 \newpage
 
-\topic{Voluntary Experience}{\faPagelines}
-\project{Literary Wanders}{Masaryk University}{
-  Organizing Semi-Annual Informal Literary Conferences under the Auspice of Masaryk University}
+\topic{Languages}{\faFlagO}
+\vspace{2mm}
+%% \leftline{
+%%   \begin{tabular}{rc}
+%%     \textsc{\large{Czech}} & \multirow{2}{*}{\large{\faStar \faStar \faStar}} \\ Native \\
+%%     \multirow{0}{*}{} & \\
+%%     \textsc{\large{English}} & \multirow{2}{*}{\large{\faStar \faStar \faStar}} \\ Full Professional Proficiency \\
+%%     \multirow{0}{*}{} & \\
+%%     \textsc{\large{German}} & \multirow{2}{*}{\large{\faStar \faStarO \faStarO}} \\ Limited Working Proficiency
+%%   \end{tabular}
+%% }
+
+\begin{addmargin}[10mm]{0em}
+  \begin{tabular}{ r l c }
+    \textsc{\large{Czech}} & Native & \hspace{10mm} {\large{\faStar \faStar \faStar}} \\
+    \\
+    \textsc{\large{English}} & Full Professional Proficiency &  \hspace{10mm} {\large{\faStar \faStar \faStar}} \\
+    \\
+    \textsc{\large{German}} & Limited Working Proficiency &  \hspace{10mm} {\large{\faStar \faStarO \faStarO}} \\
+  \end{tabular}
+\end{addmargin}
+\vspace{6mm}
 
 \topicend
 
 \topic{Computer skills}{\faWrench}
 
-\compskill{Basic}{\LaTeX, WordPress, GIMP, Various Photo Editing Tools}
-\compskill{Advanced}{Linux Desktop (Ubuntu, RHEL), Microsoft Windows, Google Docs, Dropbox, Typography, Internet, LibreOffice}
+\compskill{Basic}{\LaTeX, WordPress, Various Photo Editing Tools}
+\compskill{Experienced}{Linux Desktop (Ubuntu, RHEL), Microsoft Windows, Google Docs, Dropbox, Typography, Internet, LibreOffice}
 
 %% \leftline{
 %%     \hspace{7mm}
@@ -162,7 +167,7 @@ Internship, Customer Care, Technical Support on the Phone, Working with Customer
 
 \topicend
 
-\topic{Communication skills}{\faUsers}
+\topic{Communication Courses and Training}{\faUsers}
 \skill{2012}{Masaryk University, Faculty of Arts}{Brno}{Presentation Skills}{Course}
 \skill{2012}{Student Agency s.r.o.}{Brno}{Communication Training}{Certificate}
 \skill{2010}{Masaryk University, Faculty of Arts}{Brno}{Instruments for Presentation}{Course}
@@ -173,6 +178,10 @@ Internship, Customer Care, Technical Support on the Phone, Working with Customer
 \topic{Other Courses}{\faUniversity}
 \skill{2011}{Student Agency s.r.o.}{Brno}{First Aid}{Certificate}
 \skill{2010}{Masaryk University, Faculty of Informatics}{Brno}{Introduction to Visual Communication}{Course}
-\skill{2009}{Masaryk University, Faculty of Arts}{Brno}{Prose in Creative Process}{Course}
-  
+%% \skill{2009}{Masaryk University, Faculty of Arts}{Brno}{Prose in Creative Process}{Course}
+
+\topic{Voluntary Experience}{\faPagelines}
+\project{Literary Wanders}{Masaryk University}{
+  Organizing Semi-Annual Informal Literary Conferences under the Auspice of Masaryk University}
+
 \end{document}

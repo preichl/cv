@@ -40,8 +40,12 @@
 \newcommand{\skill}[5]{
   \begin{addmargin}[14mm]{0em}
     \textsc{#1 | \textbf{#2}, #3} \\
-    \textsc{#4} \\
-    #5 \\
+    %% \textsc{#4} | #5 \\
+    \textsc{#4} - #5 \\
+    %% \begin{tabular}{r l}
+    %%   \textsc{\large{#4}} & #5 \\
+    %% \end{tabular}
+
   \end{addmargin}
   \vspace{3mm}
 }
