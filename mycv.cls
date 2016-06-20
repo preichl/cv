@@ -27,12 +27,21 @@
   \vspace{3mm}
 }
 
-\newcommand{\uni}[5]{
+\newcommand{\uni}[4]{
   \begin{addmargin}[14mm]{0em}
     \textsc{#1 | \textbf{#2}, #3} \\
     %% \begin{addmargin}[5mm]{0em}
       \textsc{#4} \\
     %% \end{addmargin}
+  \end{addmargin}
+  \vspace{3mm}
+}
+
+\newcommand{\skill}[5]{
+  \begin{addmargin}[14mm]{0em}
+    \textsc{#1 | \textbf{#2}, #3} \\
+    \textsc{#4} \\
+    #5 \\
   \end{addmargin}
   \vspace{3mm}
 }
@@ -54,17 +63,25 @@
 }
 
 \newcommand{\topicend}{
-    \vspace{1mm}
+    \vspace{3mm}
 }
 
 \newcommand{\project}[3]{
   \begin{addmargin}[13mm]{0em}
     \large{\textsc{#1}} | \normalsize{\textbf{#2}} \\
     \normalsize{
-      #3
+      #3 \\
       }
   \end{addmargin}
-  \vspace{2mm}
+  \vspace{3mm}
+}
+
+\newcommand{\compskill}[2]{
+  \begin{addmargin}[13mm]{0em}
+    \large{\textsc{#1}}  \\
+    \normalsize{#2} \\
+  \end{addmargin}
+  \vspace{3mm}
 }
 
 \newcommand{\hammerware}{Hammerware, s.r.o.}
