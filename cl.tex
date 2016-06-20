@@ -1,0 +1,69 @@
+% \documentclass{article}
+\documentclass{mycv}
+
+\usepackage[right=3.1cm]{geometry}
+\usepackage{paracol,xcolor,lipsum}
+\usepackage{graphicx}
+\usepackage{fontawesome}
+\usepackage[english]{babel}
+%% \usepackage[T1]{fontenc}
+%\usepackage{tgheros} % or helvet
+% \usepackage[scale=.9]{tgheros} % or helvet
+
+%% \usepackage[scaled]{helvet}
+%% \renewcommand\familydefault{\sfdefault}
+%\usepackage[T1]{fontenc}
+
+\usepackage{multirow}
+\usepackage{hyperref}
+
+\hypersetup{hidelinks=true}
+
+\usepackage[parfill]{parskip}
+\usepackage{setspace}
+
+\begin{document}
+\pagenumbering{gobble}
+\urlstyle{sf}
+\columnratio{0.65}
+\begin{paracol}{2}
+
+  \switchcolumn
+  \leftline{
+    \begin{tabular}{rl}
+      \multirow{2}{*}{\small{\faFemale}} & \textsc{\small{Name}} \\
+      &  Anna Kubalíková \\
+      %% \multirow{0}{*}{} & \\
+      \multirow{3}{*}{\small{\faMapMarker}} & \textsc{\small{Address}} \\
+      &  Brno \\
+      &  Czech Republic \\
+      \multirow{1}{*}{\small{\faEnvelopeO}} & \textsc{\small{Email}} \\
+      & \small{\url{anna.kubalikova@gmail.com}} \\
+      \multirow{1}{*}{\small{\faMobile}} & \textsc{\small{Phone}} \\
+      & +420 608 650 466 \\
+    \end{tabular}
+  }
+  \vspace{10mm}
+\end{paracol}
+
+\emph{Bosch Communication Center Magdeburg GmbH\\
+Personalabteilung\\
+Schillerstrasse 56-58\\
+10627 Berlin\\}
+
+%% \renewcommand{\baselinestretch}{2.5}
+\setstretch{1.25}
+Dear Sir/Madam,\\
+
+I would like to apply for the \emph{Kundenbetreuerin für deutschen Premium-Automobilhersteller} position you are currently advertising on your company's website. \\
+I have built my career in a variety of roles and industries, though they have a common theme – working with people. Throughout my working experience I have developed great communication skills as well as resistance to stress and ability to keep a cool head in critical situations since working directly with clients brings unexpected situations and issues which have to be solved immediately. Being flexible, able to multitask and at the same time well-organized I have managed to build a successful career as an English teacher and translator–freelance during the past three years. \\
+I have always enjoyed and thrived in an environment where I could meet new challenges and opportunities to extend and deepen my knowledge and gain new skills, both technical and non-technical.\\
+I believe that my diverse skills and qualifications fit to the position perfectly and they will make me an asset to your company.\\
+My accomplishments and qualifications are further detailed in the attached CV. I welcome the opportunity to meet with you and discuss the value that I can bring to your company.\\
+If you require any further information, please do not hesitate to contact me.\\
+
+Thank you for your time and consideration.\\
+
+Yours sincerely,\\
+Anna Kubalíková
+\end{document}
