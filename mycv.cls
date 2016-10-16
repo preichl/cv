@@ -25,9 +25,9 @@
 
 \newcommand{\uni}[6]{
   \begin{addmargin}[14mm]{0em}
-    \textsc{#1 | \textbf{#2}, #3} \\
+    \textsc{#1 | \emph{#2}, #3} \\
     %% \begin{addmargin}[5mm]{0em}
-      \textsc{#4} \\
+      \textbf{\textsc{#4}} \\
       %% \begin{addmargin}[5mm]{0em}
         Thesis: \emph{#5}
       %% \end{addmargin}
