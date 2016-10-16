@@ -13,7 +13,7 @@
     \end{addmargin}
     \faWrench\hspace{1mm}\texttt{#6}
   \end{addmargin}
-  \vspace{1mm}
+  \vspace{2mm}
 }
 
 \newcommand{\subtopic}[2]{
