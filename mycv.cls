@@ -6,25 +6,21 @@
 
 \newcommand{\jobls}[6]{
   \begin{addmargin}[13mm]{0em}
-    \textsc{#1 | \textbf{#2}, #3} \\
-    \textsc{#4} \\
-    #5 \\
+    \textsc{#1 | #2, #3} \\
+    \textsc{\textbf{#4}}
+    \begin{addmargin}[2mm]{0em}
+      #5
+    \end{addmargin}
     \faWrench\hspace{1mm}\texttt{#6}
   \end{addmargin}
-  \vspace{3mm}
+  \vspace{1mm}
 }
 
-\newcommand{\mjobls}[9]{
+\newcommand{\subtopic}[2]{
   \begin{addmargin}[13mm]{0em}
-    \textsc{#1 | \textbf{#2}, #3} \\
-    \textsc{#4} \\
-    #5 \\
-    \faWrench\hspace{1mm}\texttt{#6} \\
-    \textsc{#7}  \\
-    #8 \\
-    \faWrench\hspace{1mm}\texttt{#9}
+    #2\hspace{1mm}#1
   \end{addmargin}
-  \vspace{3mm}
+  \vspace{1mm}
 }
 
 \newcommand{\uni}[6]{
@@ -60,15 +56,19 @@
     \vspace{1mm}
 }
 
-\newcommand{\project}[4]{
-  \begin{addmargin}[13mm]{0em}
-    \large{\textsc{#1}} | \normalsize{\textbf{#2}} | \normalsize{#4} \\
-    \normalsize{
-      #3
-      }
+\newcommand{\project}[1]{
+  \begin{addmargin}[15mm]{0em}
+    \normalsize{#1}
+%%    \large{\textsc{#1}} \normalsize{#3} | \normalsize{#2}
   \end{addmargin}
-  \vspace{2mm}
+  \vspace{1mm}
 }
+%% \newcommand{\project}[3]{
+%%   \begin{addmargin}[15mm]{0em}
+%%     \large{\textsc{#1}} \normalsize{#3} | \normalsize{#2}
+%%   \end{addmargin}
+%%   \vspace{1mm}
+%% }
 
 \newcommand{\hammerware}{Hammerware, s.r.o.}
 
